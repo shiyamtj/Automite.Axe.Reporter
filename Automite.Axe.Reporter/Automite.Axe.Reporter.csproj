@@ -1,8 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Title>Automite.Axe.Reporter</Title>
+    <PackageId>Automite.Axe.Reporter</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Shiyam Jannan</Authors>
+    <PackageTags>Report,Accessibility,Axe</PackageTags>
+    <Description>Project repository can be found here - https://github.com/shiyamtj/Automite.Axe.Reporter</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/shiyamtj/Automite.Axe.Reporter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +25,17 @@
   
   <ItemGroup>
     <PackageReference Include="Deque.AxeCore.Selenium" Version="4.7.2" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
